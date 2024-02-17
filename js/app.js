@@ -66,14 +66,14 @@ for (let i = 0; i < btns.length; i++) {
 }
 
      
-        document.querySelector('.scroll').onclick = () => {
-          // переместим в начало страницы
-          window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: 'smooth'
-          });
-        }
-    
+let t;
+function up() {
+	let top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+	if(top > 0) {
+		window.scrollBy(0,-100);
+		t = setTimeout('up()',20);
+	} else clearTimeout(t);
+	return false;
+}
 
 
