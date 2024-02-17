@@ -68,13 +68,7 @@ for (let i = 0; i < btns.length; i++) {
 const btnUp = {
       el: document.querySelector('.scroll'),
       addEventListener() {
-        // при прокрутке содержимого страницы
         window.addEventListener('scroll', () => {
-          // определяем величину прокрутки
-          const scrollY = window.scrollY || document.documentElement.scrollTop;
-          // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
-        });
-        // при нажатии на кнопку .btn-up
         document.querySelector('.scroll').onclick = () => {
           // переместим в начало страницы
           window.scrollTo({
