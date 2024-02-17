@@ -364,8 +364,8 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url(/img/header-cat/electrical-cable.png) no-repeat right bottom, -webkit-gradient(linear, left top, left bottom, from(#080d1f), to(#363f5b));
-  background: url(/img/header-cat/electrical-cable.png) no-repeat right bottom, linear-gradient(#080d1f, #363f5b);
+  background: url(../img/header-cat/electrical-cable.png) no-repeat right bottom, -webkit-gradient(linear, left top, left bottom, from(#080d1f), to(#363f5b));
+  background: url(../img/header-cat/electrical-cable.png) no-repeat right bottom, linear-gradient(#080d1f, #363f5b);
   border-radius: 30px;
 }
 .header-catalog__item1 .btn-osnov {
@@ -408,19 +408,19 @@ h2 {
 }
 
 .item2--1 {
-  background: url(/img/header-cat/Termo.png) no-repeat top right;
+  background: url(../img/header-cat/Termo.png) no-repeat top right;
 }
 
 .item2--2 {
-  background: url(/img/header-cat/styage.png) no-repeat top right;
+  background: url(../img/header-cat/styage.png) no-repeat top right;
 }
 
 .item2--3 {
-  background: url(/img/header-cat/gilz.png) no-repeat top right;
+  background: url(../img/header-cat/gilz.png) no-repeat top right;
 }
 
 .item2--4 {
-  background: url(/img/header-cat/muft.png) no-repeat top right;
+  background: url(../img/header-cat/muft.png) no-repeat top right;
 }
 
 .item1-header {
@@ -480,7 +480,7 @@ h2 {
   top: auto;
   right: 8px;
   background-color: rgba(255, 255, 255, 0.33);
-  background-image: url(/img/header-cat/Arrow.png);
+  background-image: url(../img/header-cat/Arrow.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: auto;
@@ -602,19 +602,19 @@ h2 {
 }
 
 .item--popular1 {
-  background: url(/img/popular/1.png) no-repeat top right;
+  background: url(../img/popular/1.png) no-repeat top right;
 }
 
 .item--popular2 {
-  background: url(/img/popular/2.png) no-repeat top right;
+  background: url(../img/popular/2.png) no-repeat top right;
 }
 
 .item--popular3 {
-  background: url(/img/popular/3.png) no-repeat top right;
+  background: url(../img/popular/3.png) no-repeat top right;
 }
 
 .item--popular4 {
-  background: url(/img/popular/4.png) no-repeat top right;
+  background: url(../img/popular/4.png) no-repeat top right;
 }
 
 .popular-category__text {
@@ -758,7 +758,7 @@ h2 {
 .btn-prod::after {
   position: absolute;
   content: '';
-  background: url(/img/header/cart.svg);
+  background: url(../img/header/cart.svg);
   top: 12px;
   right: 10px;
   width: 16px;
@@ -812,8 +812,8 @@ h2 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
-  background: -webkit-gradient(linear, left top, right top, from(#2c3340), color-stop(51%, rgba(44, 51, 64, 0))), url(/img/aboutUs/man.png) no-repeat center/cover;
-  background: linear-gradient(90deg, #2c3340 0%, rgba(44, 51, 64, 0) 51%), url(/img/aboutUs/man.png) no-repeat center/cover;
+  background: -webkit-gradient(linear, left top, right top, from(#2c3340), color-stop(51%, rgba(44, 51, 64, 0))), url(../img/aboutUs/man.png) no-repeat center/cover;
+  background: linear-gradient(90deg, #2c3340 0%, rgba(44, 51, 64, 0) 51%), url(../img/aboutUs/man.png) no-repeat center/cover;
 }
 .about-content__title {
   font-family: Raleway, sans-serif;
