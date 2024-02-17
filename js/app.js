@@ -66,9 +66,7 @@ for (let i = 0; i < btns.length; i++) {
 }
 
 const btnUp = {
-      el: document.querySelector('.scroll'),
-      addEventListener() {
-        window.addEventListener('scroll', () => {
+        addEventListener() {
         document.querySelector('.scroll').onclick = () => {
           // переместим в начало страницы
           window.scrollTo({
@@ -77,6 +75,6 @@ const btnUp = {
             behavior: 'smooth'
           });
         }
-      }
     }
+}
     btnUp.addEventListener();
