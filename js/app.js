@@ -64,3 +64,12 @@ for (let i = 0; i < btns.length; i++) {
     this.className +=" link--active";
     });
 }
+document.querySelector('.scroll').onclick = () => {
+          // переместим в начало страницы
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          });
+        }
+
