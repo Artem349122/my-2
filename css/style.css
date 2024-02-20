@@ -2264,5 +2264,10 @@ input[type="email"] {
     right: 18px;
   }
 }
+@media (max-width: 367px){
+  .btn-call{
+    margin-left: 43px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
