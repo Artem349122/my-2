@@ -2215,6 +2215,9 @@ input[type="email"] {
   .about-content__title {
     font-size: 20px;
   }
+  .foot-list__location img{
+  margin-right: 34px;
+ }
 }
 @media (max-width: 380px) {
   .product-content {
