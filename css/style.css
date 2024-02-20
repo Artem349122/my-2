@@ -2289,5 +2289,8 @@ input[type="email"] {
             flex: 1 0 42%;
   }
 }
+.foot-list__location img{
+  margin-right: 34px;
+}
 
 /*# sourceMappingURL=style.css.map */
