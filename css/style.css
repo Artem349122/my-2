@@ -1896,7 +1896,9 @@ input[type="email"] {
   .about-us {
     margin-bottom: 0px;
   }
-
+  .product-content__items{
+    padding-left: 13px;
+  }
   .about-content__text {
     font-size: 14px;
   }
@@ -1996,7 +1998,7 @@ input[type="email"] {
   }
 
   .product-content__items {
-    padding-left: 46px;
+    padding-left: 30px;
   }
 
   .header-subcatalog {
@@ -2082,6 +2084,9 @@ input[type="email"] {
     top: 5px;
     right: 0px;
   }
+  .product-content__items{
+    padding-left: 10px;
+  }
 }
 @media (max-width: 460px) {
   .header-bottom .logo {
@@ -2128,7 +2133,7 @@ input[type="email"] {
   }
 
   .product-content__items {
-    padding-left: 34px;
+    padding-left: 10px;
   }
 
   .arrows-company__left {
