@@ -635,19 +635,19 @@ h2 {
 }
 
 .item--popular1 {
-  background: url(../img/popular/1.png) no-repeat top right / 100% 100%;
+  background: url(../img/popular/1.png) no-repeat top right;
 }
 
 .item--popular2 {
-  background: url(../img/popular/2.png) no-repeat top right / 100% 100%;
+  background: url(../img/popular/2.png) no-repeat top right;
 }
 
 .item--popular3 {
-  background: url(../img/popular/3.png) no-repeat top right / 100% 100%;
+  background: url(../img/popular/3.png) no-repeat top right;
 }
 
 .item--popular4 {
-  background: url(../img/popular/4.png) no-repeat top right / 100% 100%;
+  background: url(../img/popular/4.png) no-repeat top right;
 }
 
 .popular-category__text {
