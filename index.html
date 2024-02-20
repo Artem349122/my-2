@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,23 +27,28 @@
                     <button class="btn btn-call" id="btnCall"  type="button">Заказать звонок</button>
                 </div>
                 <div class="header-top__right">
-                    <a href="#" class="location"><img class="location-img" src="img/header/location.svg" alt="Location"></a>
+                    <a href="#" class="location" data-modal="#modal"><img class="location-img" src="img/header/location.svg" alt="Location"></a>
                     <p>г.Москва, Звенигородское шоссе 13</p>
                 </div>
             </div>
             <div class="header-bottom">
+                    <!--=============Burger======================-->
+               <button type="button" class="burger">
+                    <img src="img/burger.svg" class="burger__icon" alt="">
+               </button>
+                    <!--=============/Burger======================-->
                 <div class="logo">
                     <a href="index.html"><img  src="img/header/Logo.svg" alt="logo"></a>
                 </div>
                 <div class="nav" id="navH">
                     <ul class="nav__list" >
-                        <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Статьи</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Оплата</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Доставка</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Помощь</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                        <li class="nav__item"><a href="javascript://" class="nav__link">О нас</a></li>
+                        <li class="nav__item"><a href="javascript://" class="nav__link">Каталог</a></li>
+                        <li class="nav__item"><a href="javascript://" class="nav__link">Статьи</a></li>
+                        <li class="nav__item"><a href="javascript://" class="nav__link">Оплата</a></li>
+                        <li class="nav__item"><a href="javascript://" class="nav__link">Доставка</a></li>
+                        <li class="nav__item"><a href="javascript://" class="nav__link">Помощь</a></li>
+                        <li class="nav__item"><a href="javascript://" class="nav__link">Контакты</a></li>
                     </ul>
                 </div>
                 <div class="header-bottom__right">
@@ -51,7 +56,7 @@
                     <button class="input-btn" type="button"><img class="input-btn__img" src="img/header/search.svg" alt="search"></button>
                     <div class="cart">
                         <a class="cart__btn" ><img src="img/header/cart.svg" alt="cart"></a>
-                        <span class="cart__summ">1</span>
+                        <span class="cart__summ" id="count">0</span>
                         <p class="cart__price">1234 &#8381;</p>
                     </div>
                 </div>
@@ -85,19 +90,19 @@
             <div class="header-sub">
                 <div class="header-subcatalog">
                     <div class="header-subcatalog__item">
-                        <div class="header-subcatalog__img"><img src="img/header-cat/zavod.svg" alt="zavod"></div>
+                        <div class="header-subcatalog__img"><img src="/img/header-cat/zavod.svg" alt="zavod"></div>
                         <div class="header-subcatalog__text"><p>Собственное<br> производство</p></div>
                     </div>
                     <div class="header-subcatalog__item">
-                        <div class="header-subcatalog__img"><img src="img/header-cat/shesternya.svg" alt="zavod"></div>
+                        <div class="header-subcatalog__img"><img src="/img/header-cat/shesternya.svg" alt="zavod"></div>
                         <div class="header-subcatalog__text"><p>Весь товар<br> сертифицирован</p></div>
                     </div>
                     <div class="header-subcatalog__item">
-                        <div class="header-subcatalog__img"><img src="img/header-cat/procent.svg" alt="zavod"></div>
+                        <div class="header-subcatalog__img"><img src="/img/header-cat/procent.svg" alt="zavod"></div>
                         <div class="header-subcatalog__text"><p>Система лояльности<br> для клиентов</p></div>
                     </div>
                     <div class="header-subcatalog__item">
-                        <div class="header-subcatalog__img"><img src="img/header-cat/korzina.svg" alt="zavod"></div>
+                        <div class="header-subcatalog__img"><img src="/img/header-cat/korzina.svg" alt="zavod"></div>
                         <div class="header-subcatalog__text"><p>Широкий ассортимент<br>
                             товаров</p></div>
                     </div>
@@ -109,7 +114,7 @@
 
 <!--                     Popular Category                       -->
 
-    <section class="popular-category">
+   <section class="popular-category">
         <div class="container">
             <div class="popular-category__content">
                 <h2 class="popular-category__article">Популярные категории</h2>
@@ -132,19 +137,19 @@
         <div class="container">
             <div class="product-content">
                 <div class="product__slider-arrows">
-                    <button class="arrows__slideer-left" id="slideLeftProd" type="button"><img src="img/popular/arrow_left.png" alt=""></button>
-                    <button class="arrows__slideer-right" id="slideRightProd" type="button"><img src="img/popular/arrow_right.png" alt=""></button>
+                    <button class="arrows__slideer-left" id="slideLeftProd" type="button"><img src="/img/popular/arrow_left.png" alt=""></button>
+                    <button class="arrows__slideer-right" id="slideRightProd" type="button"><img src="/img/popular/arrow_right.png" alt=""></button>
                 </div>
                 <h2 class="product-content__article">Популярные товары</h2>
                 <div class="product-content__items">
                     <div class="product-content__item" id="productSlider">
                         <div class="prodcont">
                             <div class="prodcont__top">
-                                <img src="img/popular/productZ.png" alt="product" class="prodcont__img">
+                                <img src="/img/popular/productZ.png" alt="product" class="prodcont__img">
                             </div>
                             <div class="prodcont__text"><p>Пятипроводные клеммы Wago</p></div>
                             <div class="prw">
-                                <div class="prodcont__stock"><img src="img/popular/stock.svg" alt=""><span>В наличии</span></div>
+                                <div class="prodcont__stock"><img src="/img/popular/stock.svg" alt=""><span>В наличии</span></div>
                                 <div class="prodcont__price">
                                     <p class="pr">1 374 &#8381;.шт</p>
                                     <a class="btn-prod" href="javascript://"><span>В корзину</span></a>
@@ -153,11 +158,11 @@
                         </div>
                         <div class="prodcont">
                             <div class="prodcont__top">
-                                <img src="img/popular/productZ.png" alt="product" class="prodcont__img">
+                                <img src="/img/popular/productZ.png" alt="product" class="prodcont__img">
                             </div>
                             <div class="prodcont__text"><p>Пятипроводные клеммы Wago</p></div>
                             <div class="prw">
-                                <div class="prodcont__stock"><img src="img/popular/stock.svg" alt=""><span>В наличии</span></div>
+                                <div class="prodcont__stock"><img src="/img/popular/stock.svg" alt=""><span>В наличии</span></div>
                                 <div class="prodcont__price">
                                     <p class="pr">1 374 &#8381;.шт</p>
                                     <a class="btn-prod" href="javascript://"><span>В корзину</span></a>
@@ -166,11 +171,11 @@
                         </div>
                         <div class="prodcont">
                             <div class="prodcont__top">
-                                <img src="img/popular/productZ.png" alt="product" class="prodcont__img">
+                                <img src="/img/popular/productZ.png" alt="product" class="prodcont__img">
                             </div>
                             <div class="prodcont__text"><p>Пятипроводные клеммы Wago</p></div>
                             <div class="prw">
-                                <div class="prodcont__stock"><img src="img/popular/stock.svg" alt=""><span>В наличии</span></div>
+                                <div class="prodcont__stock"><img src="/img/popular/stock.svg" alt=""><span>В наличии</span></div>
                                 <div class="prodcont__price">
                                     <p class="pr">1 374 &#8381;.шт</p>
                                     <a class="btn-prod" href="javascript://"><span>В корзину</span></a>
@@ -179,11 +184,11 @@
                         </div>
                         <div class="prodcont">
                             <div class="prodcont__top">
-                                <img src="img/popular/productZ.png" alt="product" class="prodcont__img">
+                                <img src="/img/popular/productZ.png" alt="product" class="prodcont__img">
                             </div>
                             <div class="prodcont__text"><p>Пятипроводные клеммы Wago</p></div>
                             <div class="prw">
-                                <div class="prodcont__stock"><img src="img/popular/stock.svg" alt=""><span>В наличии</span></div>
+                                <div class="prodcont__stock"><img src="/img/popular/stock.svg" alt=""><span>В наличии</span></div>
                                 <div class="prodcont__price">
                                     <p class="pr">1 374 &#8381;.шт</p>
                                     <a class="btn-prod" href="javascript://"><span>В корзину</span></a>
@@ -192,11 +197,11 @@
                         </div>
                         <div class="prodcont">
                             <div class="prodcont__top">
-                                <img src="img/popular/productZ.png" alt="product" class="prodcont__img">
+                                <img src="/img/popular/productZ.png" alt="product" class="prodcont__img">
                             </div>
                             <div class="prodcont__text"><p>Пятипроводные клеммы Wago</p></div>
                             <div class="prw">
-                                <div class="prodcont__stock"><img src="img/popular/stock.svg" alt=""><span>В наличии</span></div>
+                                <div class="prodcont__stock"><img src="/img/popular/stock.svg" alt=""><span>В наличии</span></div>
                                 <div class="prodcont__price">
                                     <p class="pr">1 374 &#8381;.шт</p>
                                     <a class="btn-prod" href="javascript://"><span>В корзину</span></a>
@@ -205,11 +210,11 @@
                         </div>
                         <div class="prodcont">
                             <div class="prodcont__top">
-                                <img src="img/popular/productZ.png" alt="product" class="prodcont__img">
+                                <img src="/img/popular/productZ.png" alt="product" class="prodcont__img">
                             </div>
                             <div class="prodcont__text"><p>Пятипроводные клеммы Wago</p></div>
                             <div class="prw">
-                                <div class="prodcont__stock"><img src="img/popular/stock.svg" alt=""><span>В наличии</span></div>
+                                <div class="prodcont__stock"><img src="/img/popular/stock.svg" alt=""><span>В наличии</span></div>
                                 <div class="prodcont__price">
                                     <p class="pr">1 374 &#8381;.шт</p>
                                     <a class="btn-prod" href="javascript://"><span>В корзину</span></a>
@@ -221,11 +226,11 @@
 
                         <div class="prodcont">
                             <div class="prodcont__top">
-                                <img src="img/popular/productZ.png" alt="product" class="prodcont__img">
+                                <img src="/img/popular/productZ.png" alt="product" class="prodcont__img">
                             </div>
                             <div class="prodcont__text"><p>Пятипроводные клеммы Wago</p></div>
                             <div class="prw">
-                                <div class="prodcont__stock"><img src="img/popular/stock.svg" alt=""><span>В наличии</span></div>
+                                <div class="prodcont__stock"><img src="/img/popular/stock.svg" alt=""><span>В наличии</span></div>
                                 <div class="prodcont__price">
                                     <p class="pr">1 374 &#8381;.шт</p>
                                     <a class="btn-prod" href="javascript://"><span>В корзину</span></a>
@@ -234,11 +239,11 @@
                         </div>
                         <div class="prodcont">
                             <div class="prodcont__top">
-                                <img src="img/popular/productZ.png" alt="product" class="prodcont__img">
+                                <img src="/img/popular/productZ.png" alt="product" class="prodcont__img">
                             </div>
                             <div class="prodcont__text"><p>Пятипроводные клеммы Wago</p></div>
                             <div class="prw">
-                                <div class="prodcont__stock"><img src="img/popular/stock.svg" alt=""><span>В наличии</span></div>
+                                <div class="prodcont__stock"><img src="/img/popular/stock.svg" alt=""><span>В наличии</span></div>
                                 <div class="prodcont__price">
                                     <p class="pr">1 374 &#8381;.шт</p>
                                     <a class="btn-prod" href="javascript://"><span>В корзину</span></a>
@@ -247,11 +252,11 @@
                         </div>
                         <div class="prodcont">
                             <div class="prodcont__top">
-                                <img src="img/popular/productZ.png" alt="product" class="prodcont__img">
+                                <img src="/img/popular/productZ.png" alt="product" class="prodcont__img">
                             </div>
                             <div class="prodcont__text"><p>Пятипроводные клеммы Wago</p></div>
                             <div class="prw">
-                                <div class="prodcont__stock"><img src="img/popular/stock.svg" alt=""><span>В наличии</span></div>
+                                <div class="prodcont__stock"><img src="/img/popular/stock.svg" alt=""><span>В наличии</span></div>
                                 <div class="prodcont__price">
                                     <p class="pr">1 374 &#8381;.шт</p>
                                     <a class="btn-prod" href="javascript://"><span>В корзину</span></a>
@@ -260,11 +265,11 @@
                         </div>
                         <div class="prodcont">
                             <div class="prodcont__top">
-                                <img src="img/popular/productZ.png" alt="product" class="prodcont__img">
+                                <img src="/img/popular/productZ.png" alt="product" class="prodcont__img">
                             </div>
                             <div class="prodcont__text"><p>Пятипроводные клеммы Wago</p></div>
                             <div class="prw">
-                                <div class="prodcont__stock"><img src="img/popular/stock.svg" alt=""><span>В наличии</span></div>
+                                <div class="prodcont__stock"><img src="/img/popular/stock.svg" alt=""><span>В наличии</span></div>
                                 <div class="prodcont__price">
                                     <p class="pr">1 374 &#8381;.шт</p>
                                     <a class="btn-prod" href="javascript://"><span>В корзину</span></a>
@@ -273,11 +278,11 @@
                         </div>
                         <div class="prodcont">
                             <div class="prodcont__top">
-                                <img src="img/popular/productZ.png" alt="product" class="prodcont__img">
+                                <img src="/img/popular/productZ.png" alt="product" class="prodcont__img">
                             </div>
                             <div class="prodcont__text"><p>Пятипроводные клеммы Wago</p></div>
                             <div class="prw">
-                                <div class="prodcont__stock"><img src="img/popular/stock.svg" alt=""><span>В наличии</span></div>
+                                <div class="prodcont__stock"><img src="/img/popular/stock.svg" alt=""><span>В наличии</span></div>
                                 <div class="prodcont__price">
                                     <p class="pr">1 374 &#8381;.шт</p>
                                     <a class="btn-prod" href="javascript://"><span>В корзину</span></a>
@@ -286,11 +291,11 @@
                         </div>
                         <div class="prodcont">
                             <div class="prodcont__top">
-                                <img src="img/popular/productZ.png" alt="product" class="prodcont__img">
+                                <img src="/img/popular/productZ.png" alt="product" class="prodcont__img">
                             </div>
                             <div class="prodcont__text"><p>Пятипроводные клеммы Wago</p></div>
                             <div class="prw">
-                                <div class="prodcont__stock"><img src="img/popular/stock.svg" alt=""><span>В наличии</span></div>
+                                <div class="prodcont__stock"><img src="/img/popular/stock.svg" alt=""><span>В наличии</span></div>
                                 <div class="prodcont__price">
                                     <p class="pr">1 374 &#8381;.шт</p>
                                     <a class="btn-prod" href="javascript://"><span>В корзину</span></a>
@@ -302,7 +307,6 @@
             </div>
         </div>
     </section>
-
 <!--===============================About Us===========================-->
 
     <section class="about-us">
@@ -314,7 +318,7 @@
                         <p>Зайдите в наш магазин и перенеситесь в страну технических чудес. Яркие светодиодные дисплеи, интерактивные демонстрации продуктов и ультрасовременные технические инсталляции создают захватывающий опыт покупок, который выходит за рамки обычного.</p>
                     </div>
                     <div class="about-content__btn">
-                        <a class="btn-osnov" href="javascript://"><span>Подробнее</span></a>    
+                        <a class="btn-osnov"><span>Подробнее</span></a>    
                     </div>
                 </div>
                 <div class="about-content__item2">
@@ -334,14 +338,14 @@
                     <button class="arrows__company__right" id="slideRightComp" type="button"><img src="img/popular/arrow_right.png" alt=""></button>
                 </div>
                 <div class="slider-company">
-                    <div class="item"><img src="img/slide-company/Rectangle 37.png" alt=""></div>
-                    <div class="item"><img src="img/slide-company/Rectangle38.png" alt=""></div>
-                    <div class="item"><img src="img/slide-company/Rectangle 39.png" alt=""></div>
-                    <div class="item"><img src="img/slide-company/Rectangle 40.png" alt=""></div>
-                    <div class="item"><img src="img/slide-company/Rectangle 37.png" alt=""></div>
-                    <div class="item"><img src="img/slide-company/Rectangle38.png" alt=""></div>
-                    <div class="item"><img src="img/slide-company/Rectangle 39.png" alt=""></div>
-                    <div class="item"><img src="img/slide-company/Rectangle 40.png" alt=""></div>
+                    <div class="item"><img src="/img/slide-company/Rectangle 37.png" alt=""></div>
+                    <div class="item"><img src="/img/slide-company/Rectangle38.png" alt=""></div>
+                    <div class="item"><img src="/img/slide-company/Rectangle 39.png" alt=""></div>
+                    <div class="item"><img src="/img/slide-company/Rectangle 40.png" alt=""></div>
+                    <div class="item"><img src="/img/slide-company/Rectangle 37.png" alt=""></div>
+                    <div class="item"><img src="/img/slide-company/Rectangle38.png" alt=""></div>
+                    <div class="item"><img src="/img/slide-company/Rectangle 39.png" alt=""></div>
+                    <div class="item"><img src="/img/slide-company/Rectangle 40.png" alt=""></div>
                 </div>       
             </div>         
         </div>
@@ -358,11 +362,11 @@
                     <div class="bottom__catalog">
                         <div class="bottom__product">
                             <div class="prodcont__top form--top">
-                                <img src="img/popular/productZ.png" alt="product" class="prodcont__img">
+                                <img src="/img/popular/productZ.png" alt="product" class="prodcont__img">
                             </div>
                             <div class="prodcont__text"><p>Пятипроводные клеммы Wago</p></div>
                             <div class="prw">
-                                <div class="prodcont__stock"><img src="img/popular/stock.svg" alt=""><span>В наличии</span></div>
+                                <div class="prodcont__stock"><img src="/img/popular/stock.svg" alt=""><span>В наличии</span></div>
                                 <div class="prodcont__price">
                                     <p class="pr">1 374 &#8381;.шт</p>
                                     <a class="btn-prod" href="javascript://"><span>В корзину</span></a>
@@ -371,11 +375,11 @@
                         </div>
                         <div class="bottom__product">
                             <div class="prodcont__top form--top">
-                                <img src="img/popular/productZ.png" alt="product" class="prodcont__img">
+                                <img src="/img/popular/productZ.png" alt="product" class="prodcont__img">
                             </div>
                             <div class="prodcont__text"><p>Пятипроводные клеммы Wago</p></div>
                             <div class="prw">
-                                <div class="prodcont__stock"><img src="img/popular/stock.svg" alt=""><span>В наличии</span></div>
+                                <div class="prodcont__stock"><img src="/img/popular/stock.svg" alt=""><span>В наличии</span></div>
                                 <div class="prodcont__price">
                                     <p class="pr">1 374 &#8381;.шт</p>
                                     <a class="btn-prod" href="javascript://"><span>В корзину</span></a>
@@ -384,11 +388,11 @@
                         </div>
                         <div class="bottom__product">
                             <div class="prodcont__top form--top">
-                                <img src="img/popular/productZ.png" alt="product" class="prodcont__img">
+                                <img src="/img/popular/productZ.png" alt="product" class="prodcont__img">
                             </div>
                             <div class="prodcont__text"><p>Пятипроводные клеммы Wago</p></div>
                             <div class="prw">
-                                <div class="prodcont__stock"><img src="img/popular/stock.svg" alt=""><span>В наличии</span></div>
+                                <div class="prodcont__stock"><img src="/img/popular/stock.svg" alt=""><span>В наличии</span></div>
                                 <div class="prodcont__price">
                                     <p class="pr">1 374 &#8381;.шт</p>
                                     <a class="btn-prod" href="javascript://"><span>В корзину</span></a>
@@ -399,7 +403,7 @@
                 </div>
                 <div class="bottom__item2">
                     <div class="item2__title">
-                        <button class="btn-chat" type="button"><img src="img/form/chat.svg" alt=""></button>
+                        <button class="btn-chat" type="button"><img src="/img/form/chat.svg" alt=""></button>
                         <h2>Помощь в оформлении заказа</h2>
                     </div>
                     <div class="item2__contact">
@@ -435,26 +439,26 @@
     <section class="info">
         <div class="container">
             <p class="info-text">
-                ООО «Торговый Дом Ай Пи Эс» известна в России уже более 5 лет как надежный поставщик электротехнической продукции.<br>Основным направлением деятельности организации являются оптовые поставки электротехнической продукции различного направления в<br> строительстве, ЖКХ, транспорте, промышленности:ООО «Торговый Дом Ай Пи Эс» известна в России уже более 5 лет как надежный поставщик<br> электротехнической продукции.<br>Основным направлением деятельности организации являются оптовые поставки электротехнической продукции различного направления в<br> строительстве, ЖКХ, транспорте, промышленности:
+                ООО «Торговый Дом Ай Пи Эс» известна в России уже более 5 лет как надежный поставщик электротехнической продукции.Основным направлением деятельности организации являются оптовые поставки электротехнической продукции различного направления в строительстве, ЖКХ, транспорте, промышленности:ООО «Торговый Дом Ай Пи Эс» известна в России уже более 5 лет как надежный поставщик электротехнической продукции.Основным направлением деятельности организации являются оптовые поставки электротехнической продукции различного направления в<br> строительстве, ЖКХ, транспорте, промышленности:
             </p>
         </div>
     </section>
 
 <!--==============================Footer======================================-->
 
-<section class="footer">
-    <div class="container">
-        <div class="foot">
-            <div class="foot__top" id="navF">
-                <div class="foot__item1">
+    <footer class="footer">
+        <div class="container">
+            <div class="foot">
+                <div class="foot__top" id="navF">
+                    <div class="foot__item1">
                     <ul class="foot-list" >
                         <li class="foot-list__li"><h2 class="foot-list__title">Компания</h2></li>
                         <li class="foot-list__li"><a href="javascript://" class="foot-list__link">О нас</a></li>
                         <li class="foot-list__li"><a href="javascript://" class="foot-list__link">Каталог</a></li>
                         <li class="foot-list__li"><a href="javascript://" class="foot-list__link">Статьи</a></li>
                     </ul>
-                </div>
-                <div class="foot__item2">
+                    </div>
+                    <div class="foot__item2">
                     <ul class="foot-list">
                         <li class="foot-list__li"><h2 class="foot-list__title">Информация</h2></li>
                         <li class="foot-list__li"><a href="javascript://" class="foot-list__link">Помощь</a></li>
@@ -462,8 +466,8 @@
                         <li class="foot-list__li"><a href="javascript://" class="foot-list__link">Доставка</a></li>
                         <li class="foot-list__li"><a href="javascript://" class="foot-list__link">Гарантии</a></li>
                     </ul>
-                </div>
-                <div class="foot__item3">
+                    </div>
+                    <div class="foot__item3">
                     <ul class="foot-list">
                         <li class="foot-list__li"><h2 class="foot-list__title">Будьте всегда в курсе!</h2></li>
                         <li class="foot-list__li"><input type="text"
@@ -471,8 +475,8 @@
                             placeholder="Поиск"></li>
                         <button class="foot-btn" type="button"><img class="input-btn__img" src="img/footer/mail-footer.svg" alt="search"></button>
                     </ul>
-                </div>
-                <div class="foot__item4">
+                    </div>
+                    <div class="foot__item4">
                     <ul class="foot-list">
                         <li class="foot-list__li"><h2 class="foot-list__title">Контакты</h2></li>
                         <li class="foot-list__li">
@@ -483,21 +487,31 @@
                         </li>
                         <li class="foot-list__li">
                             <div class="foot-list__location">
-                                <a href="javascript://"><img src="img/header/location.svg" alt="location"></a>
+                                <a href="javascript://" data-modal="#modal"><img src="img/header/location.svg" alt="location"></a>
                                 <p>г.Москва, Звенигородское шоссе 13</p>
                             </div>
                         </li>
                     </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="foot__bottom">
+                <div class="foot__bottom">
                 <p>2023 Все права защищены</p>
                 <a href="#" onclick="return up()"><img src="img/footer/logo-footer.png" alt="logo-footer"></a>
                 <p>Разработано saitvsem.ru</p>
+                </div>
             </div>
         </div>
+    </footer>
+
+<!--===========================Popup=================================-->
+    <div class="mod" id="modal">
+        <div class="mod__inner">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6d34711bcd9e551ec21eb85d73765557809b9fdad87d1f58bb2a3aecf12c95f6&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+            <button class="mod__close" data-modal-close>
+                <img src="img/close.svg" alt="">
+            </button>
+        </div>
     </div>
-</section>
 
 <script src="js/JQuery.js"></script>
 <script src="js/slick.js"></script>

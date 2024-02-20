@@ -2,8 +2,12 @@ $headerFont: Inter, sans-serif;
 $raleFont: Raleway, sans-serif;
 $red: #FF1F00;
 
-
-
+*{
+    box-sizing: border-box;
+}
+body.no-scroll{
+    overflow: hidden;
+}
 p{
     margin: 0px;
 }
@@ -27,17 +31,17 @@ h2{
     margin: 0px;
 }
 .container{
-    margin: 0px auto;
     width: 100%;
     max-width: 1382px;
-    padding: 0px 30px;
+    margin: 0px auto;
+    padding: 0px 30px; 
 }
 
 
 //-----------------------Header---------------------------
 .header{
     
-    
+    width: 100%;
     &-top{
         display: flex;
         align-items: center;
@@ -119,7 +123,7 @@ h2{
     
 }
 .input{
-    max-width: 154px;
+    max-width: 220px; 
     border-radius: 50px;
     height: 45px;
     padding: 0px;
@@ -137,7 +141,7 @@ h2{
 .input-btn{
     
     position: absolute;
-    top: 6px;
+    top: 5px;
     left: 8px;
     width: 35px;
     height: 35px;
@@ -210,7 +214,7 @@ h2{
         background-color: $red;
         border-radius: 50%;
         color: #fff;
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         font-family: $headerFont;
@@ -218,8 +222,16 @@ h2{
         font-size: 8px;
         top: 0px;
         left: 25px;
+        &.summ--active{
+            display: flex; 
+        }
+        
     }
+    
+    
 }
+
+
 
 .cart__btn{
     display: inline-block;
@@ -250,7 +262,22 @@ h2{
 }
 
 
-
+.burger{
+    display: none;
+    padding: 0px;
+    background-color: $red;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    &__icon{
+        width: 18px;
+        height: 18px;
+        padding-top: 3px;
+    }
+}
 
 .nav__list{
     display: flex;
@@ -494,7 +521,7 @@ h2{
 .popular-category__article{
     font-family: $raleFont;
     font-weight: 600;
-    font-size: 32;
+    font-size: 32px;
     color: #2C3340;
     margin-bottom: 30px;
 }
@@ -1121,8 +1148,8 @@ input[type="email"]{
     position: relative;
     .foot-btn{
         position: absolute;
-        top: 35px;
-        right: 18px;
+        top: 36px;
+        right: 38px;
         width: 35px;
         height: 35px;
         display: inline-block;
@@ -1149,5 +1176,785 @@ input[type="email"]{
         font-weight: 400;
         font-size: 14px;
         color: rgba(255,255,255,.5);
+    }
+}
+
+//=====================Modal=======================
+
+.mod{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    &.show{
+        display: flex;
+    }
+}
+
+.mod__inner{
+    position: relative;
+    height: 400px;
+    width: 500px;
+    background-color: #fff;
+    
+}
+
+.mod__close{
+    //width: 20px;
+    //height: 20px;
+    position: absolute;
+    top: -20px;
+    right: -30px;
+    z-index: 1;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform .2s linear;
+    img{
+        display: block;
+    }
+    &:hover{
+        transform: rotate(90deg);
+    }
+}
+
+
+//================Media========================
+@media (max-width: 1365px){
+    .bottom__catalog{
+
+        justify-content: space-around;
+    }
+    .bottom__item{
+        width: 100%;
+        margin-bottom: 42px;
+    }
+    .bottom__block{
+        flex-wrap: wrap;
+        height: inherit;
+    }
+    .bottom__item2{
+        width: 100%;
+        flex: none;
+        margin-left: 0px;
+    }
+}
+@media (max-width: 1310px){
+    .header-catalog__item2 .item2{
+        flex: 0 0 47%;
+    }
+}
+@media (max-width: 1250px){
+    .header-catalog__item2 .item2{
+        flex: 0 0 47%;
+    }
+
+    .item2--1,
+    .item2--2,
+    .item2--3,
+    .item2--4{
+        background-size: 80% 80%;
+    }
+}
+
+@media (max-width: 1194px){
+
+    .nav__list .nav__item:not(.nav__item:last-child){
+            margin-right: 5px;
+        }
+        .item2--1,
+        .item2--2,
+        .item2--3,
+        .item2--4{
+            background-size: 70% 70%;
+        }
+
+        .header-catalog__item1{
+            background: url(/img/header-cat/electrical-cable.png) no-repeat right bottom / 50% 60%, linear-gradient(#080d1f, #363f5b);
+            height: 350px;
+        }
+
+        .header-catalog__item2 .item2{
+            height: 163px;
+        }
+        .about-content__text{
+            font-size: 14px;
+        }
+}
+
+@media (max-width: 1100px){
+
+    .input{
+        max-width: 173px;
+    }
+    .item--popular1,
+    .item--popular2,
+    .item--popular3,
+    .item--popular4{
+        background-size: 86% 86%;
+    }
+    .about-content{
+        height: 382px;
+    }
+    .about-content__text{
+        font-size: 16px;
+    }
+    .about-content__title{
+        font-size: 28px;
+    }
+    .about-us{
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 1055px){
+
+    .nav__list .nav__link{
+        font-size: 13px;
+    }
+    .header-subcatalog__img{
+        width: 80px;
+        height: 80px;
+    }
+
+
+
+}
+
+@media (max-width: 974px){
+    .header-bottom .logo{
+        position: absolute;
+        top: -15px;
+        left: 41%;
+    }
+
+    .nav{
+        padding-left: 20px;
+    }
+
+    .header-catalog__item1{
+        background: url(/img/header-cat/electrical-cable.png) no-repeat right bottom / 40% 45%, linear-gradient(#080d1f, #363f5b);
+        height: 320px;
+    }
+    .header-catalog__item2 .item2{
+        height: 148px;
+    }
+    .item2-text{
+        font-size: 14px;
+    }
+
+    .header-subcatalog__text p{
+        font-size: 14px;
+    }
+
+    .header-subcatalog__img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .header-subcatalog__img img{
+        width: 50%;
+        
+    }
+
+    .item1-text{
+        font-size: 20px;
+    }
+
+    .item1-header{
+        font-size: 30px;
+    }
+
+    .popular-category__text{
+        font-size: 14px;
+    }
+
+    .prodcont{
+        max-width: 180px;
+
+    }
+    .product-content__items{
+        padding-left: 29px;
+    }
+    .arrows__slideer-left{
+        top: 410px;
+        left: 247px;
+    }
+    .arrows__slideer-right{
+        top: 410px;
+        right: 247px;
+    }
+    .arrows-company__left{
+        top: 90px;
+        left: 160px;
+    }
+    .arrows__company__right{
+        top: 90px;
+        right: 160px;
+    }
+    .info-text{
+        font-size: 16px;
+    }
+    .prodcont__price .pr{
+        font-size: 12px;
+    }
+    .contacts__name,
+    .contacts__email{
+        font-size: 14px;
+    }
+    .item2__comment h2{
+        font-size: 14px;
+    }
+    .item2__title h2{
+        font-size: 24px;
+    }
+    .slider-section{
+        margin-bottom: 140px;
+    }
+}
+@media (max-width: 910px){
+    .header-catalog__item2 .item2{
+        flex: 0 0 45%;
+    }
+}
+@media (max-width: 850px){
+    .header-catalog__item2 .item2{
+        flex: 0 0 42%;
+    }
+    .header-catalog__item1{
+        height: 280px;
+    }
+
+    .header-catalog__item2 .item2{
+        height: 128px;
+    }
+    .header-subcatalog__text p{
+        font-size: 12px;
+    }
+    .item--popular1,
+    .item--popular2,
+    .item--popular3,
+    .item--popular4{
+        background-size: 85% 72%;
+    }
+    .popular-category__items .popular-category__item{
+        height: 160px;
+    }
+    .arrows__slideer-left{
+        
+        left: 200px;
+    }
+    .arrows__slideer-right{
+        
+        right: 200px;
+    }
+    .prodcont__text{
+        font-size: 14px;
+    }
+    .prodcont__price .pr{
+        font-size: 12px;
+    }
+    .header-bottom .logo{
+        left: 34%;
+    }
+}
+
+@media (max-width: 800px){
+    .about-content{
+        flex-direction: column;
+    }
+    .about-content__item2{
+        display: none;
+    }
+    .about-content{
+        border-radius: 0px;
+    }
+    .header-bottom .logo{
+        width: 120px;
+        top: -5px;
+        left: 39%;
+    }
+    .foot{
+        position: relative;
+    }
+    .foot__item3{
+        position: absolute;
+        top: 157px;
+        right: 0px;
+    }
+}
+@media (max-width: 767px){
+    .about-us{
+        margin-bottom: 10px;
+    }
+    .nav{
+        display: none;
+    }
+
+    .header-bottom .logo{
+        position: static;
+    }
+
+    .header-bottom{
+        background-color: #fff;
+        position: relative;
+    }
+
+    .header-bottom .logo{
+        padding-top: 12px;
+    }
+
+    .logo img{
+        width: 85%;
+    }
+
+    .burger{
+        display: block;
+        margin-left: 20px;
+    }
+
+    .nav{
+        width: 100%;
+        //display: block;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        &__list{
+            flex-direction: column;
+        }
+    }
+
+    .nav__list .nav__link{
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .wrapper-header{
+        flex-direction: column;
+    }
+    .header-catalog__item1{
+        max-width: 100%;
+        height: 348px;
+        background: url(/img/header-cat/electrical-cable.png) no-repeat right bottom/40% 60%, linear-gradient(#080d1f, #363f5b);
+        margin-bottom: 17px;
+    }
+
+    .header-catalog__item2{
+        max-width: 100%;
+    }
+    .header-catalog__item2 .item2{
+        flex: 0 0 48%;
+    }
+    .item2--1,
+    .item2--2,
+    .item2--3,
+    .item2--4 {
+        background-size: 70% 100%;
+    }
+
+    .header-subcatalog{
+        flex-wrap: wrap;
+        padding-left: 50px;
+    }
+
+    .header-subcatalog__item{
+        flex: 0 0 42%;
+        padding-top: 15px;
+    }
+    .header-subcatalog__item:first-child{
+        padding-left: 0px;
+    }
+    .header-subcatalog__item:last-child {
+        margin-right: 0px;
+    }
+    .header-catalog__item2 .item2{
+        height: 155px;
+    }
+
+    .popular-category__items{
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .popular-category__items .popular-category__item{
+        flex: 0 0 46%;
+    }
+    .popular-category__item{
+        margin-bottom: 25px;
+    }
+    .item--popular1,
+    .item--popular2,
+    .item--popular3,
+    .item--popular4{
+        background-size: 58% 79%;
+    }
+    .btn-prod span{
+        display: none;
+    }
+    .btn-prod{
+        width: 40px;
+    }
+    .btn-prod::after{
+        right: 13px;
+    }
+    .arrows__slideer-left{
+        
+        left: 120px;
+    }
+    .arrows__slideer-right{
+        
+        right: 120px;
+    }
+
+}
+@media (max-width: 665px){
+    .header-catalog__item2 .item2{
+        flex: 0 0 42%;
+    }
+    .header-catalog__item2{
+        margin-left: 45px;
+    }
+    .header-top__left a{
+        font-size: 12px;
+    }
+    .header-top__right p{
+        font-size: 12px;
+    }
+    .foot-list__title{
+        font-size: 14px;
+    }
+    .foot-list__link{
+        font-size: 12px;
+    }
+    .foot-list .foot-btn{
+        top: 33px;
+    }
+    
+}
+@media (max-width: 655px){
+    
+}
+@media (max-width: 610px){
+    .popular-category__items .popular-category__item{
+        flex: 0 0 44%;
+    }
+    .info-text{
+        padding-top: 80px;
+    }
+    .header-catalog__item2{
+        margin-left: 0px;
+    }
+    .foot__bottom p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 677px){
+    .about-us{
+        margin-bottom: 0px;
+    }
+    //.arrows__slideer-left{
+        
+        //left: 209px;
+    //}
+    //.arrows__slideer-right{
+        
+       // right: 225px;
+    //}
+    .about-content__text{
+        font-size: 14px;
+    }
+    .about-content__item1{
+        padding: 50px 60px 24px 50px
+    }
+    .popular-category__items .popular-category__item{
+        flex: 0 0 44%;
+    }
+}
+@media (max-width: 600px){
+    .header-subcatalog{
+        padding-left: 0px;
+    }
+    .header-catalog__item2 .item2{
+        flex: 0 0 47%;
+    }
+    .header-subcatalog__item{
+        flex-direction: column;
+        align-items: inherit;
+    }
+    .header-subcatalog__img{
+        margin-bottom: 10px;
+    }
+    .header-subcatalog__text p{
+        font-size: 20px;
+    }
+}
+@media (max-width: 575px){
+    .header-top__right{
+        display: none;
+    }
+    .header-top{
+        justify-content: space-between;
+    }
+
+    .btn-call{
+        margin-left: 225px;
+    }
+
+    .header-bottom{
+        position: static;
+    }
+    .header-bottom .logo{
+        position: absolute;
+        top: 0px;
+        left: 35%;
+    }
+    .header-catalog__item1{
+        height: 248px;
+        background: url(/img/header-cat/electrical-cable.png) no-repeat right bottom/33% 55%, linear-gradient(#080d1f, #363f5b);
+    }
+    .header-catalog__item2 .item2{
+        height: 114px;
+    }
+    .header-subcatalog{
+        height: 243px;
+    }
+    .header-subcatalog__item{
+        padding-top: 0px;
+    }
+    .header-subcatalog__text p{
+        font-size: 16px;
+    }
+    .arrows__slideer-left{
+        
+        left: 100px;
+    }
+    .arrows__slideer-right{
+        
+        right: 100px;
+    }
+    .product-content__items{
+        padding-left: 46px;
+    }
+    .header-subcatalog{
+        padding-top: 4px;
+    }
+    .header-subcatalog__text p{
+        font-size: 12px;
+    }
+    .arrows-company__left{
+        left: 110px;
+    }
+    .arrows__company__right{
+        right: 110px;
+    }
+}
+@media (max-width: 540px){
+    .btn-call{
+        margin-left: 195px;
+    }
+}
+@media (max-width: 516px){
+    .btn-call{
+        margin-left: 148px;
+    }
+    .arrows__slideer-left{
+        
+        left: 90px;
+    }
+    .arrows__slideer-right{
+        
+        right: 90px;
+    }
+    .btn-prod{
+        margin-right: 10px ;
+    }
+    .about-content{
+        height: 358px;
+    }
+    .item2__title h2{
+        font-size: 18px;
+    }
+    .foot-list{
+        margin-right: 10px;
+    }
+}
+
+
+@media (max-width: 476px){
+
+    .header-top__left a{
+        font-size: 12px;
+    }
+    .btn-call{
+        margin-left: 134px;
+    }
+    .popular-category__items .popular-category__item{
+        flex: 0 0 43%;
+    }
+    .bottom__item{
+        height: 100%;
+    }
+    .bottom__product:first-child{
+        display: none;
+    }
+    .contacts__name,
+    .contacts__email{
+        font-size: 11px;
+    }
+    .foot__bottom a img{
+        position: absolute;
+        top: 5px;
+        right: 0px;
+    }
+}
+
+@media (max-width: 460px){
+    .header-bottom .logo{
+        width: 150px;
+    }
+    .btn-call{
+        margin-left: 125px;
+    }
+    .header-catalog__item2 .item2{
+        flex: 0 0 46%;
+    }
+    .item--popular1,
+    .item--popular2,
+    .item--popular3,
+    .item--popular4{
+        background-size: 84% 74%;
+    }
+    .popular-category__items .popular-category__item{
+        flex: 0 0 42%;
+    }
+    .popular-category__items{
+        padding-left: 10px;
+    }
+    .prodcont {
+        max-width: 147px;
+    }
+    .arrows__slideer-left{
+        
+        left: 80px;
+    }
+    .arrows__slideer-right{
+        
+        right: 80px;
+    }
+    .product-content__items{
+        padding-left: 34px;
+    }
+    .arrows-company__left{
+        top: 90px;
+        left: 90px;
+    }
+    .arrows__company__right{
+        top: 90px;
+        right: 90px;
+    }
+    .info-text{
+        font-size: 14px;
+    }
+    .foot__item3{
+        top: 176px;
+        right: -46px;
+    }
+    .foot-list__title{
+        font-size: 12px;
+    }
+    .foot-list__phone.phone--list{
+        font-size: 12px;
+    }
+    .foot-list__location p{
+        font-size: 12px;
+    }
+}
+@media (max-width: 440px){
+    .btn-call{
+        margin-left: 110px;
+    }
+    .header-catalog__item1{
+        background: url(/img/header-cat/electrical-cable.png) no-repeat right bottom/33% 46%, linear-gradient(#080d1f, #363f5b);
+    }
+    .about-content__item1{
+        padding: 26px 60px 30px 50px;
+    }
+}
+@media (max-width: 427px){
+    .input{
+        max-width: 140px;
+    }
+    .btn-call{
+        margin-left: 62px;
+    }
+    .header-bottom .logo{
+        width: 101px;
+        top: 5px;
+        left: 35%;
+    }
+    .header-catalog__item1{
+        background: url(/img/header-cat/electrical-cable.png) no-repeat right bottom/33% 40%, linear-gradient(#080d1f, #363f5b);
+    }
+    .about-content__item1{
+        padding: 26px 60px 30px 50px;
+    }
+    .about-content__title{
+        font-size: 20px;
+    }
+
+}
+@media (max-width: 380px){
+    .btn-call{
+        margin-left: 54px;
+    }
+    .header-subcatalog__text p{
+        font-size: 12px;
+    }
+    .item2--1,
+    .item2--2,
+    .item2--3,
+    .item2--4{
+        background-size: 50% 62%;
+
+    }
+    .header-catalog__item1{
+    background: url(/img/header-cat/electrical-cable.png) no-repeat right bottom/33% 41%, linear-gradient(#080d1f, #363f5b)
+    }
+    .item--popular1,
+    .item--popular2,
+    .item--popular3,
+    .item--popular4{
+        background-size: 100% 63%;
+    }
+    .popular-category__items .popular-category__item{
+        flex: 0 0 46%;
+    }
+    .popular-category__items .popular-category__item:not(.popular-category__item:last-child){
+        margin-right: 6px;
+    }
+    
+    .arrows__slideer-left{
+        
+        left: 55px;
+    }
+    .arrows__slideer-right{
+        
+        right: 55px;
+    }
+    .bottom__item2{
+        margin-left: 0px;
+    }
+    .foot__item3{
+        top: 183px;
+        right: -58px;
     }
 }
