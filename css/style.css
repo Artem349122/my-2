@@ -430,6 +430,7 @@ h2 {
   height: 190px;
   background-color: #EDF1F6;
   border-radius: 20px;
+  overflow: hidden;
 }
 .header-catalog__item2 .item2:nth-child(odd) {
   margin-right: 24px;
