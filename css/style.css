@@ -635,7 +635,7 @@ h2 {
 }
 
 .item--popular1 {
-  background: url(../img/popular/1.png) no-repeat top right;
+  background: url(/img/popular/1.png) no-repeat top right;
 }
 
 .item--popular2 {
