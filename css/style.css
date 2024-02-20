@@ -2225,7 +2225,7 @@ input[type="email"] {
   }
 
   .btn-call {
-    margin-left: 54px;
+    margin-left: 47px;
   }
 
   .header-subcatalog__text p {
@@ -2294,6 +2294,12 @@ input[type="email"] {
   .foot-list__location img{
   margin-right: 34px;
  }
+  .foot-list__phone.phone--list{
+    font-size: 10px;
+  }
+  .header-top__left a{
+    font-size: 11px;
+  }
 }
 
 
