@@ -73,7 +73,10 @@ h2 {
   transition: text-decoration .2s linear, -webkit-text-decoration .2s linear;
 }
 .header-top__left a:hover {
+  @media (hover: hover) {
+       
   text-decoration: underline;
+  }
 }
 .header-top__right {
   display: -webkit-box;
@@ -100,8 +103,10 @@ h2 {
 }
 
 .location-img:hover {
+  @media (hover: hover) {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  }
 }
 
 .btn {
@@ -125,8 +130,10 @@ h2 {
 }
 
 .btn-call:hover {
+  @media (hover: hover) {
   background-color: #f54009;
   color: #fff;
+  }
 }
 
 .header-bottom__right {
@@ -178,8 +185,10 @@ h2 {
 }
 
 .input-btn:hover img {
+  @media (hover: hover) {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+  }
 }
 
 .input::-webkit-input-placeholder {
@@ -300,8 +309,10 @@ h2 {
   transition: transform .2s linear, -webkit-transform .2s linear;
 }
 .cart__btn:hover img {
+  @media (hover: hover) {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  }
 }
 
 .burger {
@@ -357,11 +368,15 @@ h2 {
   transition: width .2s linear;
 }
 .nav__list .nav__link:not(.link--active):hover::after {
+  @media (hover: hover) {
   width: 100%;
   background-color: #FF1F00;
+  }
 }
 .nav__list .nav__link:not(.link--active):hover {
+  @media (hover: hover) {
   color: #FF1F00;
+  }
 }
 
 .nav__link.link--active::after {
@@ -520,10 +535,14 @@ h2 {
   transition: background-color .2s linear;
 }
 .btn-osnov:hover, .btn-osnov:active {
+  @media (hover: hover) {
   background-color: #2C3340;
+  }
 }
 .btn-osnov:hover::after, .btn-osnov:active::after {
+  @media (hover: hover) {
   background-color: #FF1F00;
+  }
 }
 
 .item2-text {
@@ -785,7 +804,9 @@ h2 {
   transition: background-color .2s linear;
 }
 .btn-prod:hover, .btn-prod:active {
+  @media (hover: hover) {
   background-color: #2C3340;
+  }
 }
 .btn-prod::after {
   position: absolute;
@@ -1146,7 +1167,9 @@ input[type="email"] {
   color: #fff;
 }
 .btn-item2:hover {
+  @media (hover: hover) {
   background-color: #2C3340;
+  }
 }
 
 .bottom {
@@ -1229,8 +1252,10 @@ input[type="email"] {
   transition: width .2s linear;
 }
 .foot-list__link:not(.foot--active):hover::after {
+  @media (hover: hover) {
   width: 100%;
   background-color: #FF1F00;
+  }
 }
 
 .foot-list__li {
@@ -1271,7 +1296,9 @@ input[type="email"] {
   transition: color .2s linear;
 }
 .foot-list__phone.phone--list:hover {
+  @media (hover: hover) {
   color: chocolate;
+  }
 }
 .foot-list__phone img {
   margin-right: 15px;
@@ -1384,8 +1411,10 @@ input[type="email"] {
   display: block;
 }
 .mod__close:hover {
+  @media (hover: hover) {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+  }
 }
 
 @media (max-width: 1365px) {
