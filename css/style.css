@@ -1738,6 +1738,7 @@ input[type="email"] {
   }
   .nav.show {
     display: block;
+    top: 17px;
   }
 
   .nav__list {
