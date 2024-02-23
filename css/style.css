@@ -2404,9 +2404,7 @@ input[type="email"] {
 .foot-list__location img {
     margin-right: 33px;
 }
-.nav {
-    top: 17%;
-}
+
 @media (max-width: 360px) {
   .burger {
     margin-left: 4px;
