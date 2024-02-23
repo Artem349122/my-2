@@ -1252,10 +1252,10 @@ input[type="email"] {
   transition: width .2s linear;
 }
 .foot-list__link:not(.foot--active):hover::after {
-  @media (hover: hover) {
+  
   width: 100%;
   background-color: #FF1F00;
-  }
+  
 }
 
 .foot-list__li {
