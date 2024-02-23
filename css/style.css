@@ -2400,6 +2400,9 @@ input[type="email"] {
     font-size: 12px;
   }
 }
+.foot-list__location img {
+    margin-right: 33px;
+}
 @media (max-width: 360px) {
   .burger {
     margin-left: 4px;
