@@ -396,8 +396,8 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: img/header-cat/electrical-cable.png) no-repeat right bottom, -webkit-gradient(linear, left top, left bottom, from(#080d1f), to(#363f5b));
-  background: img/header-cat/electrical-cable.png) no-repeat right bottom, linear-gradient(#080d1f, #363f5b);
+  background: url(../img/header-cat/electrical-cable.png) no-repeat right bottom, -webkit-gradient(linear, left top, left bottom, from(#080d1f), to(#363f5b));
+  background: url(../img/header-cat/electrical-cable.png) no-repeat right bottom, linear-gradient(#080d1f, #363f5b);
   border-radius: 30px;
 }
 .header-catalog__item1 .btn-osnov {
@@ -440,19 +440,19 @@ h2 {
 }
 
 .item2--1 {
-  background: img/header-cat/Termo.png) no-repeat top right;
+  background: url(../img/header-cat/Termo.png) no-repeat top right;
 }
 
 .item2--2 {
-  background: img/header-cat/styage.png) no-repeat top right;
+  background: url(../img/header-cat/styage.png) no-repeat top right;
 }
 
 .item2--3 {
-  background: img/header-cat/gilz.png) no-repeat top right;
+  background: url(../img/header-cat/gilz.png) no-repeat top right;
 }
 
 .item2--4 {
-  background: img/header-cat/muft.png) no-repeat top right;
+  background: url(../img/header-cat/muft.png) no-repeat top right;
 }
 
 .item1-header {
@@ -512,7 +512,7 @@ h2 {
   top: auto;
   right: 8px;
   background-color: rgba(255, 255, 255, 0.33);
-  background-image: img/header-cat/Arrow.png);
+  background-image: url(../img/header-cat/Arrow.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: auto;
