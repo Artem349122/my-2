@@ -2310,8 +2310,8 @@ input[type="email"] {
     right: -5px;
   }
   .foot-list .foot-btn{
-  top: 31px;
-}
+    top: 31px;
+  }
 }
 
 @media (max-width: 440px) {
@@ -2467,13 +2467,14 @@ input[type="email"] {
   .nav__list .nav__link {
     font-size: 12px;
   }
-}
-.foot-list__location img {
+  .foot-list__location img {
     margin-right: 33px;
-}
-.foot-list .foot-btn {
+  }
+  .foot-list .foot-btn {
     top: 31px;
+  }
 }
+
 
 @media (max-width: 360px) {
   .burger {
