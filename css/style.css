@@ -2467,6 +2467,9 @@ input[type="email"] {
 .foot-list__location img {
     margin-right: 33px;
 }
+.foot-list .foot-btn {
+    top: 31px;
+}
 
 @media (max-width: 360px) {
   .burger {
