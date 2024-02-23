@@ -634,11 +634,11 @@ h2 {
 }
 
 .item--popular1 {
-  background: url(../img/popular/1.png) no-repeat top right;
+  background: url(../img/popular/1-2.png) no-repeat top right;
 }
 
 .item--popular2 {
-  background: url(../img/popular/2.png) no-repeat top right;
+  background: url(../img/popular/2-2.png) no-repeat top right;
 }
 
 .item--popular3 {
@@ -646,7 +646,7 @@ h2 {
 }
 
 .item--popular4 {
-  background: url(../img/popular/4.png) no-repeat top right;
+  background: url(../img/popular/4-2.png) no-repeat top right;
 }
 
 .popular-category__text {
