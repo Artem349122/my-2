@@ -2410,5 +2410,13 @@ input[type="email"] {
     margin-left: 4px;
   }
 }
+@media (max-height: 450px){
+    .mod__inner{
+        height: 250px;
+    }
+    iframe[height]{
+            height: 250px;
+        }   
+}
 
 /*# sourceMappingURL=style.css.map */
