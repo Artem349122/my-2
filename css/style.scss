@@ -1192,6 +1192,7 @@ input[type="email"]{
     top: 0;
     left: 0;
     z-index: 2000;
+    padding: 15px;
     &.show{
         display: flex;
     }
@@ -1200,7 +1201,8 @@ input[type="email"]{
 .mod__inner{
     position: relative;
     height: 400px;
-    width: 500px;
+    max-width: 500px; 
+    width: 100%;
     background-color: #fff;
     
 }
@@ -1276,7 +1278,7 @@ input[type="email"]{
         }
 
         .header-catalog__item1{
-            background: url(/img/header-cat/electrical-cable.png) no-repeat right bottom / 50% 60%, linear-gradient(#080d1f, #363f5b);
+            background: url(/img/header-cat/electrical-cable.png) no-repeat right bottom / 44% 44%, linear-gradient(#080d1f, #363f5b);
             height: 350px;
         }
 
@@ -1339,7 +1341,7 @@ input[type="email"]{
     }
 
     .header-catalog__item1{
-        background: url(/img/header-cat/electrical-cable.png) no-repeat right bottom / 40% 45%, linear-gradient(#080d1f, #363f5b);
+        background: url(/img/header-cat/electrical-cable.png) no-repeat right bottom / 40% 40%, linear-gradient(#080d1f, #363f5b);
         height: 320px;
     }
     .header-catalog__item2 .item2{
@@ -1525,12 +1527,22 @@ input[type="email"]{
         display: none;
         position: absolute;
         top: 100%;
-        left: 0;
+        left: -15px;
         right: 0;
         z-index: 1;
+        //transform: translateX(100%);
+        //transition: transform .2s ease-out;
         &__list{
             flex-direction: column;
         }
+        &.show{
+            display: block;
+            //transform: translateX(0%);
+        }
+    }
+    .nav__list{
+        border-radius: inherit;
+        padding: 13px 0px;
     }
 
     .nav__list .nav__link{
@@ -1544,7 +1556,7 @@ input[type="email"]{
     .header-catalog__item1{
         max-width: 100%;
         height: 348px;
-        background: url(/img/header-cat/electrical-cable.png) no-repeat right bottom/40% 60%, linear-gradient(#080d1f, #363f5b);
+        background: url(/img/header-cat/electrical-cable.png) no-repeat right bottom/40% 52%, linear-gradient(#080d1f, #363f5b);
         margin-bottom: 17px;
     }
 
@@ -1647,7 +1659,7 @@ input[type="email"]{
         flex: 0 0 44%;
     }
     .info-text{
-        padding-top: 80px;
+        padding-top: 30px;
     }
     .header-catalog__item2{
         margin-left: 0px;
@@ -1680,6 +1692,9 @@ input[type="email"]{
     }
     .popular-category__items .popular-category__item{
         flex: 0 0 44%;
+    }
+    .product-content__article{
+        margin-left: 10px;
     }
 }
 @media (max-width: 600px){
@@ -1717,6 +1732,7 @@ input[type="email"]{
 
     .header-bottom{
         position: static;
+        margin-bottom: 25px;
     }
     .header-bottom .logo{
         position: absolute;
@@ -1725,7 +1741,7 @@ input[type="email"]{
     }
     .header-catalog__item1{
         height: 248px;
-        background: url(/img/header-cat/electrical-cable.png) no-repeat right bottom/33% 55%, linear-gradient(#080d1f, #363f5b);
+        background: url(/img/header-cat/electrical-cable.png) no-repeat right bottom/33% 48%, linear-gradient(#080d1f, #363f5b);
     }
     .header-catalog__item2 .item2{
         height: 114px;
@@ -1762,6 +1778,27 @@ input[type="email"]{
     .arrows__company__right{
         right: 110px;
     }
+    iframe[width]{
+        width: 400px;
+    }
+    .mod__inner{
+        max-width: 400px;
+    }
+    .popular-category__content{
+        margin-bottom: 30px;
+    }
+    .slider-section{
+        margin-bottom: 108px;
+    }
+    .bottom{
+        margin-bottom: 20px;
+    }
+    .nav{
+        top: 15%;
+    }
+    .nav__list .nav__link{
+        font-size: 14px;
+    }
 }
 @media (max-width: 540px){
     .btn-call{
@@ -1792,6 +1829,9 @@ input[type="email"]{
     .foot-list{
         margin-right: 10px;
     }
+    .about-us{
+        margin-bottom: 25px;
+    }
 }
 
 
@@ -1818,8 +1858,17 @@ input[type="email"]{
     }
     .foot__bottom a img{
         position: absolute;
-        top: 5px;
+        top: 20px;
         right: 0px;
+    }
+    .arrows__slideer-left{
+        top: 388px;
+    }
+    .arrows__slideer-right{
+        top: 388px;
+    }
+    .product-popular{
+        margin-bottom: 35px;
     }
 }
 
@@ -1886,6 +1935,16 @@ input[type="email"]{
     .foot__item3{
         right: -17px; 
     }
+    iframe[width]{
+        width: 330px;
+    }
+    .mod__inner{
+        max-width: 330px;
+    }
+    .mod__close{
+        top: -30px;
+        right: -5px;
+    }
 }
 @media (max-width: 440px){
     .btn-call{
@@ -1908,7 +1967,7 @@ input[type="email"]{
     .header-bottom .logo{
         width: 101px;
         top: 5px;
-        left: 35%;
+        left: 33%;
     }
     .header-catalog__item1{
         background: url(/img/header-cat/electrical-cable.png) no-repeat right bottom/33% 40%, linear-gradient(#080d1f, #363f5b);
@@ -1918,6 +1977,13 @@ input[type="email"]{
     }
     .about-content__title{
         font-size: 20px;
+    }
+    .foot__item3{
+        right: -42px;
+        top: 162px;
+    }
+    .foot-list__li input{
+        max-width: 150px;
     }
 
 }
@@ -1939,7 +2005,7 @@ input[type="email"]{
 
     }
     .header-catalog__item1{
-    background: url(/img/header-cat/electrical-cable.png) no-repeat right bottom/33% 41%, linear-gradient(#080d1f, #363f5b)
+        background: url(/img/header-cat/electrical-cable.png) no-repeat right bottom/33% 37%, linear-gradient(#080d1f, #363f5b)
     }
     .item--popular1,
     .item--popular2,
@@ -1977,5 +2043,34 @@ input[type="email"]{
     }
     .header-subcatalog__item{
         flex: 1 0 42%;
+    }
+    .header-bottom .logo{
+        width: 101px;
+        top: 29px;
+        left: 34%;
+    }
+    .foot__bottom p {
+        font-size: 10px;
+    }
+    .arrows-company__left{
+        top: 70px;
+    }
+    .arrows__company__right{
+        top: 70px;
+    }
+    .btn-osnov{
+        margin-left: 0px;
+    }
+    .about-content__text {
+        font-size: 13px;
+    }
+    .nav__list .nav__link{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 360px){
+    .burger{
+        margin-left: 4px;
     }
 }

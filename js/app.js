@@ -110,7 +110,7 @@ let header=document.getElementById("navH");
 let btn=header.getElementsByClassName("nav__link");
 
 
-for (let i = 0; i < btns.length; i++) {
+for (let i = 0; i < btn.length; i++) {
     btn[i].addEventListener("click", function(){
     let current = document.getElementsByClassName("link--active");
     if (current.length > 0) { 
@@ -157,4 +157,17 @@ $(function() {
     $('.mod__inner').on('click',function(event){
         event.stopPropagation();
     });
+});
+
+//==============================Burger==========================
+
+$(function() {
+  let navToggle = $('#navToggle');
+  let nav = $('#navH');
+
+  navToggle.on('click',function(event){
+    event.preventDefault();
+
+    nav.toggleClass('show');
+  });
 });
