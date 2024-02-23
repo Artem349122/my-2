@@ -553,15 +553,21 @@ h2 {
   -webkit-transition: background-color .2s linear;
   transition: background-color .2s linear;
 }
-.btn-osnov:hover, .btn-osnov:active {
+.btn-osnov:hover {
   @media (hover: hover) {
   background-color: #2C3340;
   }
 }
-.btn-osnov:hover::after, .btn-osnov:active::after {
+.btn-osnov:active{
+   background-color: #2C3340;
+}
+.btn-osnov:hover::after{
   @media (hover: hover) {
   background-color: #FF1F00;
   }
+}
+.btn-osnov:active::after {
+  background-color: #FF1F00;
 }
 
 .item2-text {
@@ -822,10 +828,13 @@ h2 {
   -webkit-transition: background-color .2s linear;
   transition: background-color .2s linear;
 }
-.btn-prod:hover, .btn-prod:active {
+.btn-prod:hover{
   @media (hover: hover) {
   background-color: #2C3340;
   }
+}
+.btn-prod:active {
+  background-color: #2C3340;
 }
 .btn-prod::after {
   position: absolute;
