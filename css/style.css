@@ -368,15 +368,15 @@ h2 {
   transition: width .2s linear;
 }
 .nav__list .nav__link:not(.link--active):hover::after {
-  @media (hover: hover) {
+  
   width: 100%;
   background-color: #FF1F00;
-  }
+  
 }
 .nav__list .nav__link:not(.link--active):hover {
-  @media (hover: hover) {
+  
   color: #FF1F00;
-  }
+  
 }
 
 .nav__link.link--active::after {
