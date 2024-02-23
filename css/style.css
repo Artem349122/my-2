@@ -2309,10 +2309,11 @@ input[type="email"] {
     top: -30px;
     right: -5px;
   }
-}
-.foot-list .foot-btn{
+  .foot-list .foot-btn{
   top: 31px;
 }
+}
+
 @media (max-width: 440px) {
   .btn-call {
     margin-left: 110px;
