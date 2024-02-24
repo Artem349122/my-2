@@ -2472,6 +2472,9 @@ input[type="email"] {
     top: 31px;
   }
 }
+.btn-osnov{
+  margin-left: 0px;
+}
 
 
 @media (max-width: 360px) {
